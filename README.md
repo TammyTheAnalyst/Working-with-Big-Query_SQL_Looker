@@ -36,7 +36,10 @@ We are working with a COVID-19 data CSV file containing over 100,000 rows of cas
    ![]()
 
 2. **Filtering by Specific Date**  
-   Add the WHERE clause to return only the data for the date "2020-02-24". Use quotation marks around the date to let BigQuery know it is a date and not a string. 
+   Add the WHERE clause to return only the data for the date "2020-02-24". Use quotation marks around the date to let BigQuery know it is a date and not a string.
+
+3. **Specifying Location**
+    I used a GROUP BY clause specifying location to group the results by each location     
    
   ![]()
 
