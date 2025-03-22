@@ -54,7 +54,7 @@ We are working with a COVID-19 data CSV file containing over 100,000 rows of cas
 
 1. **Saving the Query as a View**
 
-![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4422).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4422).png)
 
 A saved view is a query result that you can reuse as a table. It’s different from a saved query, which you can re-run later but won’t directly serve as a table in other queries unless re-executed.
 
@@ -63,36 +63,33 @@ A saved view is a query result that you can reuse as a table. It’s different f
 To visualize the data, select all columns in the view. Remove the GROUP BY, LIMIT, and specific clauses in the SELECT statement.
 
 4. I changed the name of the visualization.
-![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4423).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4423).png)
 
 6. I chose location as the dimension and new_cases as the metric.
 
 
 7. Then, I created a pie chart.
 
-   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4424).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4424).png)
 
 8. I also created a bar chart.
 
-![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4425).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4425).png)
 
 9. Created a Line Graph and added data
 
-    ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4426).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4426).png)
 
-10.Added new_cases and new_deaths as dimensions and updated the bar chart colors.
+10. Added new_cases and new_deaths as dimensions and updated the bar chart colors.
 
-![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4428).png)
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4428).png)
 
 ---
 
-Task 5: Saving and Sharing Reports
+## Task 5: Saving and Sharing Reports
 Saving the Query
 
 ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4429).png)
 Before sharing, you must save the query. I saved the query for later use.
 
-Second Screenshot (saved query):
 
-Sharing the Report
-Once saved, you can share the report with others.
