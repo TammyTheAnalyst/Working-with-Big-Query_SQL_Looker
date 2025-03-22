@@ -92,4 +92,8 @@ Saving the Query
 ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4429).png)
 Before sharing, you must save the query. I saved the query for later use.
 
+---
+
+## This project helped me understand how to manage large datasets, perform data analysis with SQL, and create meaningful visual reports using Google BigQuery and Looker Studio.
+
 
