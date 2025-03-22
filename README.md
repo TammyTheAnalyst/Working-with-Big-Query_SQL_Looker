@@ -1,8 +1,11 @@
 # Working-with-Big-Query_SQL_Looker
 
+---
+
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4431).png)
 
 ## Working with COVID-19 Data
-We are working with a COVID-19 data CSV file containing over 100,000 rows of cases, available at [data.humdata.org/event/covid-19](https://data.humdata.org/event/covid-19).
+We are working with a COVID-19 data CSV file containing over 100,000 rows of cases
 
 ---
 
@@ -14,16 +17,16 @@ We are working with a COVID-19 data CSV file containing over 100,000 rows of cas
 1. Create a new project in BigQuery.
 2. Create a dataset for the project.
    
-   **Screenshot:**
-   ![]()
+   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4414).png)
+   
 
 3. Create a table for the dataset to hold the data by uploading the CSV file. 
    - Name the table.
    - Select the box "Auto detect schema."
    - Keep all other settings as default.
 
-   **Screenshot:**
-   ![]()
+   
+   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4415).png)
 
 ---
 
@@ -33,55 +36,60 @@ We are working with a COVID-19 data CSV file containing over 100,000 rows of cas
    In the SELECT section, choose the following columns: `location`, `date`, and `new_cases`. Then run the query.
 
    **Screenshot:**
-   ![]()
+   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4416).png)
 
 2. **Filtering by Specific Date**  
    Add the WHERE clause to return only the data for the date "2020-02-24". Use quotation marks around the date to let BigQuery know it is a date and not a string.
 
-3. **Specifying Location**
+   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4419).png)
+
+4. **Specifying Location**
     I used a GROUP BY clause specifying location to group the results by each location     
    
-  ![]()
+  ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4421).png)
 
   ---
 
-  Task 4: Visualizing Our Data
-Saving the Query as a View
-After running the query, click Save and select View. A pop-up window will appear. Choose the dataset name and name your table (e.g., total_cases_by_location).
+##  Task 4: Visualizing Our Data
 
-Screenshot:
+1. **Saving the Query as a View**
 
-Saved View in BigQuery
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4422).png)
+
 A saved view is a query result that you can reuse as a table. It’s different from a saved query, which you can re-run later but won’t directly serve as a table in other queries unless re-executed.
 
-Naming Convention
-The use of underscores in names (e.g., total_cases_by_location) is a common convention in programming and database design for readability. It makes names easier to read and understand.
 
-Visualizing the Data
+3. **Visualizing the Data**
 To visualize the data, select all columns in the view. Remove the GROUP BY, LIMIT, and specific clauses in the SELECT statement.
 
-Creating Visualizations
+4. I changed the name of the visualization.
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4423).png)
 
-I changed the name of the visualization.
-Chose location as the dimension and new_cases as the metric.
-Screenshot (after changing the visualization name):
+6. I chose location as the dimension and new_cases as the metric.
 
-Then, I created a pie chart.
-Screenshot (pie chart):
 
-I also created a bar chart.
-Screenshot (bar chart):
+7. Then, I created a pie chart.
 
-Added a new dimension for new_deaths and changed the color of this metric to red.
-Screenshot (color change for new_deaths):
+   ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4424).png)
 
-Added new_cases and new_deaths as dimensions and updated the bar chart.
-Screenshot (updated bar chart with new dimensions):
+8. I also created a bar chart.
+
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4425).png)
+
+9. Created a Line Graph and added data
+
+    ![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4426).png)
+
+10.Added new_cases and new_deaths as dimensions and updated the bar chart colors.
+
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4428).png)
 
 ---
 
 Task 5: Saving and Sharing Reports
 Saving the Query
+
+![](https://github.com/TammyTheAnalyst/Working-with-Big-Query_SQL_Looker/blob/main/Screenshot%20(4429).png)
 Before sharing, you must save the query. I saved the query for later use.
 
 Second Screenshot (saved query):
